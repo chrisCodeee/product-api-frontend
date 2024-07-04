@@ -17,9 +17,7 @@ const App = () => {
 			<div>
 				{/* <NavBar /> */}
 				<h1>Heading</h1>
-				<div>
-					<Outlet />
-				</div>
+				<div>{/* <Outlet /> */}</div>
 			</div>
 
 			<Footer />
