@@ -15,7 +15,8 @@ const App = () => {
 	return auth ? (
 		<div className="app">
 			<div>
-				<NavBar />
+				{/* <NavBar /> */}
+				<h1>Heading</h1>
 				<div>
 					<Outlet />
 				</div>
