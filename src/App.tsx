@@ -1,6 +1,6 @@
-import { Footer, NavBar } from "./components";
+import { Footer } from "./components";
 import "./App.css";
-import { Navigate, Outlet } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 const App = () => {
 	// const auth = localStorage.getItem("token"); //To protect our routes. If the user is logged in, they can access other links. If not, they are redirected to sign up page
@@ -15,9 +15,7 @@ const App = () => {
 	return auth ? (
 		<div className="app">
 			<div>
-				{/* <NavBar /> */}
 				<h1>Heading</h1>
-				<div>{/* <Outlet /> */}</div>
 			</div>
 
 			<Footer />
