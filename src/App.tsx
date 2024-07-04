@@ -3,7 +3,8 @@ import "./App.css";
 import { Navigate, Outlet } from "react-router-dom";
 
 const App = () => {
-	const auth = localStorage.getItem("token"); //To protect our routes. If the user is logged in, they can access other links. If not, they are redirected to sign up page
+	// const auth = localStorage.getItem("token"); //To protect our routes. If the user is logged in, they can access other links. If not, they are redirected to sign up page
+	const auth = "token";
 
 	// useEffect(() => {
 	// 	setTimeout(() => {
