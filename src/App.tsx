@@ -1,10 +1,10 @@
-import { Footer } from "./components";
+import { Footer, NavBar } from "./components";
 import "./App.css";
-import { Navigate } from "react-router-dom";
+import { Navigate, Outlet } from "react-router-dom";
 
 const App = () => {
 	// const auth = localStorage.getItem("token"); //To protect our routes. If the user is logged in, they can access other links. If not, they are redirected to sign up page
-	const auth = "token";
+	const auth = localStorage.getItem("token");
 
 	// useEffect(() => {
 	// 	setTimeout(() => {
@@ -15,7 +15,10 @@ const App = () => {
 	return auth ? (
 		<div className="app">
 			<div>
-				<h1>Heading</h1>
+				<NavBar />
+				<div>
+					<Outlet />
+				</div>
 			</div>
 
 			<Footer />
