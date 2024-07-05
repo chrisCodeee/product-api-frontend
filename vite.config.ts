@@ -5,27 +5,27 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
 	plugins: [react()],
 	server: {
-		// proxy: {
-		// 	"/users/register": {
-		// 		target: "http://localhost:8080",
-		// 		changeOrigin: true,
-		// 		secure: false,
-		// 	},
-		// 	"/users/login": {
-		// 		target: "http://localhost:8080",
-		// 		changeOrigin: true,
-		// 		secure: false,
-		// 	},
-		// 	"/products/add": {
-		// 		target: "http://localhost:8080",
-		// 		changeOrigin: true,
-		// 		secure: false,
-		// 	},
-		// 	"/products/views": {
-		// 		target: "http://localhost:8080",
-		// 		changeOrigin: true,
-		// 		secure: false,
-		// 	},
-		// },
+		proxy: {
+			"/users/register": {
+				target: "https://product-api-backend-production-f72b.up.railway.app",
+				changeOrigin: true,
+				secure: false,
+			},
+			"/users/login": {
+				target: "https://product-api-backend-production-f72b.up.railway.app",
+				changeOrigin: true,
+				secure: false,
+			},
+			"/products/add": {
+				target: "https://product-api-backend-production-f72b.up.railway.app",
+				changeOrigin: true,
+				secure: false,
+			},
+			"/products/views": {
+				target: "https://product-api-backend-production-f72b.up.railway.app",
+				changeOrigin: true,
+				secure: false,
+			},
+		},
 	},
 });
