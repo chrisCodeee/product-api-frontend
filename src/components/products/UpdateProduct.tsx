@@ -36,7 +36,7 @@ const UpdateProduct = () => {
 
 	const getProductDetails = () => {
 		axios
-			.get<ProductType>(`http://localhost:8080/products/views/${params.userId}/${params.productId}`)
+			.get<ProductType>(`https://product-api-backend-production-f72b.up.railway.app/products/views/${params.userId}/${params.productId}`)
 			.then((res) => {
 				// console.log(res.data);
 				// setProduct(res.data);
@@ -56,7 +56,7 @@ const UpdateProduct = () => {
 
 	const updateProduct = () => {
 		axios
-			.put(`http://localhost:8080/products/views/${params.userId}/${params.productId}`, product, {
+			.put(`https://product-api-backend-production-f72b.up.railway.app/products/views/${params.userId}/${params.productId}`, product, {
 				headers: {
 					Authorization: token,
 				},

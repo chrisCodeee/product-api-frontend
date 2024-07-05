@@ -30,7 +30,7 @@ const AddProducts = () => {
 
 		await axios
 			.post(
-				"http://localhost:8080/products/add",
+				"https://product-api-backend-production-f72b.up.railway.app/products/add",
 				{ ...product, userId },
 				{
 					headers: {

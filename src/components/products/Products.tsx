@@ -28,7 +28,7 @@ const Products = () => {
 
 	const getProducts = () => {
 		axios
-			.get(`http://localhost:8080/products/views/${userId}`, {
+			.get(`https://product-api-backend-production-f72b.up.railway.app/products/views/${userId}`, {
 				headers: {
 					Authorization: token,
 				},
@@ -44,7 +44,7 @@ const Products = () => {
 
 	const deleteItem = (productId: string) => {
 		axios
-			.delete(`http://localhost:8080/products/views/${userId}/${productId}`, {
+			.delete(`https://product-api-backend-production-f72b.up.railway.app/products/views/${userId}/${productId}`, {
 				headers: {
 					Authorization: token,
 				},
@@ -61,7 +61,7 @@ const Products = () => {
 	const searchProducts = (search: string) => {
 		if (!search) return getProducts();
 		axios
-			.get(`http://localhost:8080/products/search/${search}`, {
+			.get(`https://product-api-backend-production-f72b.up.railway.app/products/search/${search}`, {
 				headers: {
 					Authorization: token,
 				},
