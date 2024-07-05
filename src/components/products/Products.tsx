@@ -61,7 +61,7 @@ const Products = () => {
 	const searchProducts = (search: string) => {
 		if (!search) return getProducts();
 		axios
-			.get(`https://product-api-backend-production-f72b.up.railway.app/products/search/${search}`, {
+			.get(`https://product-api-backend-production-f72b.up.railway.app/products/search/${userId}/${search}`, {
 				headers: {
 					Authorization: token,
 				},
