@@ -22,7 +22,7 @@ const Login = () => {
 		e.preventDefault();
 
 		await axios
-			.post("http://localhost:8080/users/login", userLogin)
+			.post("https://product-api-backend-production-f72b.up.railway.app/users/login", userLogin)
 			.then((res) => {
 				// console.log(res);
 

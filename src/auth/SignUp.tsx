@@ -23,7 +23,7 @@ const SignUp = () => {
 		e.preventDefault();
 
 		await axios
-			.post("http://localhost:8080/users/signup", user)
+			.post("https://product-api-backend-production-f72b.up.railway.app/users/signup", user)
 			.then((res) => {
 				// console.log(res.data);
 
